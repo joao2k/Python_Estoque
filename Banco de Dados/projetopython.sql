@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 24-Ago-2025 às 21:35
+-- Generation Time: 27-Set-2025 às 17:15
 -- Versão do servidor: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -86,7 +86,7 @@ INSERT INTO `estados` (`id`, `nome`, `sigla`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `fornecedor` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
   `cep` varchar(20) NOT NULL,
   `enredeco` varchar(255) NOT NULL,
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
   `numero_contato` varchar(20) DEFAULT NULL,
   `telefone` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 -- --------------------------------------------------------
 
